@@ -1,12 +1,15 @@
 {
-  "name": "vite-template-solid",
+  "name": "block-fanbase",
   "version": "0.0.0",
   "description": "",
+  "homepage": "https://leonardovallem.github.io/block-fanbase",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "license": "MIT",
   "devDependencies": {
@@ -18,6 +21,7 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-solid": "^0.7.1",
+    "gh-pages": "^4.0.0",
     "typescript": "*",
     "vite": "^3.0.9",
     "vite-plugin-solid": "^2.3.0"
@@ -26,8 +30,6 @@
     "@solidjs/router": "^0.4.3",
     "@suid/icons-material": "^0.4.0",
     "@suid/material": "^0.6.2",
-    "@types/parse": "^2.18.18",
-    "parse": "^3.4.4",
     "solid-js": "^1.5.1"
   }
 }
